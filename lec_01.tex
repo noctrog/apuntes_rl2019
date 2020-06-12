@@ -1,0 +1,117 @@
+\chapter{Course Introduction, Imitation Learning}
+
+\lecture{1}{2020-06-10}{Introduction and Course Overview}
+
+\section{¿Qué es RL y por qué es importante?}%
+\label{sec:_qué_es_rl_y_por_qué_es_importante_}
+
+Las máquinas inteligentes tienen que ser capaces de adaptarse y ser flexibles. El Deep Learning es
+muy útil para resolver problemas en entornos poco estructurados, pero con la necesidad de entrenar
+modelos grandes y complejos. Casi todas las tareas que resuelve el Deep Learning tienen como
+características que son de 'mundo abierto', son diversas y variadas (por ejemplo en NLP las reglas
+de los lenguajes son demasiadas como para escribirlas a mano). 
+
+RL provee de un formalismo matemático para gestionar la toma de decisiones. Una de las primera
+historias de éxito del RL fue la aplicación de redes neuronales para estimar el valor de los estados
+del juego Backgammon. Actualmente también se aplica en robótica.
+
+Para entender mejor porque juntar RL con DL, se puede mirar al campo de la visión artificial. Al
+principio los pipelines eran escritos a manos y cada capa del pipeline requerían varios doctorados
+para ser desarrolladas. Con DL, todo este proceso queda automatizado por una red neuronal y
+superando con creces los resultados iniciales.
+
+En el pasado se tenían los mismos problemas con el RL. Las características que representaban los
+estados tenían que cogerse a mano y consultar con expertos para saber cuáles de ellas eran más
+importantes a la hora de definir el valor o la política. La idea del DRL es que este proceso también
+queda encapsulado por una red neuronal.
+
+\section{¿Que otros problemas itenen que resolbverse para habilitar un proceso de toma de
+decisiones en el mundo real?}%
+\label{sec:_que_otros_problemas_itenen_que_resolbverse_para_habilitar_un_proceso_de_toma_de_decisiones_en_el_mundo_real_}
+
+\begin{itemize}
+    \item Ir más allá de la recompensa: como por ejemplo aprender la función de recompensa en sí
+        después de haber visto a un 'profesor' (aprendizaje por refuerzo inverso). 
+    \item Transferir el conocimiento entre varios dominios.
+    \item Aprender a predecir.
+\end{itemize}
+
+\section{¿De donde vienen las recompensas?}%
+\label{sec:_de_donde_vienen_las_recompensas_}
+
+En la vida real no se tienen recompensas. Pueden haber entornos muy complejos en los que nunca se
+llegue a una recompensa, por lo que nunca se aprende.
+
+En el cerebro humano, las recomensas vienen de los ganglios basales, los cuales ocupan
+una parte importante del cerebro. Lo que quiere decir que las funciones de recompensa no
+son algo sencillo, como si fueran un interruptor que se activa cuando se hace algo bien.
+
+También las personas son buenas en saber que recompensas reciben otros individuos cuando hacen
+ciertas acciones y tienen ciertos objetivos.
+
+Hay evidencia de que el razonamiento inteligente humano viene de las predicciones que hacemos
+del mundo.
+
+\section{¿Qué se puede hacer con un modelo perfecto?}%
+\label{sec:_que_se_puede_hacer_con_un_modelo_perfecto_}
+
+Si se aprende un modelo completo del mundo se pueden conseguir políticas muy complejas.
+
+\section{¿Cómo se crean las máquinas inteligentes?}%
+\label{sec:_cómo_se_crean_las_máquinas_inteligentes_}
+
+Se podría partir a partir de una máquina inteligente ya existente como la mente humana. Se
+podría intentar modelar de forma sencilla cada parte del cerebro. Desafortunadamente esto es
+extraordinariamente complejo.
+
+Se puede hacer el proceso más sencillo partiendo de la hipótesis de que el aprendizaje es la base
+de la inteligencia. Por lo que se podría por ejemplo programar varias partes de un cerebro
+virtual para que cada parte aprendiese de su dominio.
+
+Existe la hipótesis de que solo hay un algoritmo o unos pocos que son la base de la
+inteligencia. Hay varias evidencias a favor de esta hipótesis: como la flexibilidad del cerebro
+de los animales (p.e. visión a través de la lengua).
+
+\section{¿Qué tendría que hacer una algoritmo así?}%
+\label{sec:_qué_tendría_que_hacer_una_algoritmo_así_}
+
+Tendría que interpretar entradas sensoriales muy ricas en información y elegir entre
+acciones muy complejos.
+
+\section{¿Por qué usar DRL?}%
+\label{sec:_por_qué_usar_drl_}
+
+\begin{itemize}
+    \item Deep = puede procesar entradas sensoriales complejas (y también computar funciones
+        complejas)
+    \item RL: puede elegir entre acciones complejas.
+\end{itemize}
+
+Evidencias a favor del DL en la publicación: \textit{Unsupervised learning models of primary
+cortical receptive fields and receptive field plasticity}. Se compara DL con las redes
+neuronales de animales en tareas de visión, audición y tacto y estadísticamente hay grandes
+coincidencias.
+
+También hay evidencias de RL en el cerebro. (Publicación: \textit{Reinforcement
+learning in the brain}). 
+
+\section{¿Qué puede hacer bien actualmente DRL?}%
+\label{sec:_qué_puede_hacer_bien_actualmente_drl_}
+
+\begin{itemize}
+    \item Adquirir un cierto grado de proficiencia en entornos gobernados por reglas
+        conocidas y sencillas.
+    \item Aprender habilidades a partir de experiencia
+    \item Imitar el comportamiento de otros agentes.
+\end{itemize}
+
+\section{¿Cuáles son actualmente los desafíos de DRL?}%
+\label{sec:_cuáles_son_actualmente_los_desafíos_de_drl_}
+
+Los métodos DRL aprenden muy lento comparado con los seres humanos. Además los humanos también
+podemos usar conocimiento acumulado.
+
+También, no se tiene una noción clara de cual debería ser la función de recompensa ni cual
+debería ser el rol de la predicción (model free vs model based).
+
+
