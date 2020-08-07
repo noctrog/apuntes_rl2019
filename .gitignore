@@ -1,2 +1,2 @@
-build
-!build/master.pdf
+/build
+!/build/master.pdf
